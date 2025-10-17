@@ -3,11 +3,11 @@
 // ===== CONFIGURAÇÃO DOS LINKS DO GOOGLE DRIVE =====
 // IMPORTANTE: Substitua estes links pelos seus links reais do Google Drive
 const DRIVE_LINKS = {
-    templates: 'https://drive.google.com/drive/folders/SEU_ID_PASTA_TEMPLATES',
-    brandbook: 'https://drive.google.com/file/d/SEU_ID_ARQUIVO_BRANDBOOK/view',
-    videos: 'https://drive.google.com/drive/folders/SEU_ID_PASTA_VIDEOS',
-    kits: 'https://drive.google.com/drive/folders/SEU_ID_PASTA_KITS',
-    orientacoes: 'https://drive.google.com/drive/folders/SEU_ID_PASTA_ORIENTACOES'
+    templates: 'https://drive.google.com/drive/folders/1vt8ZRuZbp0gDPKp-kqLKJDQAAyrZShLR?usp=sharing',
+    brandbook: 'https://drive.google.com/drive/folders/1m-JjA0U7FJQLZWvQPLhBlIO_cMx4uB35?usp=sharing',
+    videos: 'https://drive.google.com/drive/folders/1fRkOZ9nVLEfA39GevrAmUSvnYKSonrfy?usp=sharing',
+    kits: 'https://drive.google.com/drive/folders/1dvTVAaDiZdPMxdnNXwy2v9hFfw80a0cb?usp=sharing',
+    orientacoes: 'https://drive.google.com/drive/folders/1nN_0i0rU1xNklNuO9V8qlLlrGM_-rMzQ?usp=sharing'
 };
 
 // ===== VERIFICAÇÃO DE AUTENTICAÇÃO =====
