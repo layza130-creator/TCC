@@ -1,5 +1,8 @@
 /* ===== VARIÁVEIS E RESET ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
 :root {
+    /* === CORES === */
     --color-primary: #E31E24;
     --color-secondary: #FFB81C;
     --color-dark: #1a1a1a;
@@ -7,27 +10,56 @@
     --color-white: #ffffff;
     --color-gray: #cccccc;
     --color-gray-dark: #666666;
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Montserrat', sans-serif;
+
+    /* === FONTES === */
+    --font-family: 'Poppins', sans-serif;
+    --font-heading: var(--font-family);
+    --font-subheading: var(--font-family);
+    --font-body: var(--font-family);
+
+    /* === PESOS DAS FONTES === */
+    --weight-heading: 900;   /* Black */
+    --weight-subheading: 700; /* Bold */
+    --weight-body: 400;       /* Regular */
+
+    /* === EFEITOS === */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
     --transition: all 0.3s ease;
 }
 
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== TIPOGRAFIA GLOBAL ===== */
 body {
     font-family: var(--font-body);
+    font-weight: var(--weight-body);
     color: var(--color-white);
     line-height: 1.6;
     overflow-x: hidden;
 }
 
+/* ===== HIERARQUIA TIPOGRÁFICA ===== */
+h1, h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--weight-heading);
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-subheading);
+    font-weight: var(--weight-subheading);
+}
+
+p, span, li, label, input, textarea {
+    font-family: var(--font-body);
+    font-weight: var(--weight-body);
+}
 /* ===== LOGIN PAGE ===== */
 .login-page {
     background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
