@@ -48,8 +48,17 @@ body {
     align-items: center;
 }
 
-.logo img {
-    height: 50px;
+.logo img, .logo-img {
+    height: 45px; /* ajuste conforme o tamanho ideal */
+    width: auto;
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 }
 
 .btn-header {
