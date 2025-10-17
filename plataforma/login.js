@@ -1,5 +1,13 @@
 // ===== LOGIN FUNCTIONALITY =====
 
+// Configuração de credenciais (em produção, isso deve estar em um backend seguro)
+const CREDENTIALS = {
+    'admin': 'admin123',
+    'franqueado': 'franquia2024',
+    'sp.centro': 'pizzacesar',
+    'demo': 'demo123'
+};
+
 // Event listener para o formulário de login
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -123,5 +131,8 @@ loginBtn.addEventListener('mouseleave', function() {
 });
 
 console.log('Sistema de Login Pizza Cesar carregado!');
-
+console.log('Credenciais de teste disponíveis:');
+console.log('- admin / admin123');
+console.log('- franqueado / franquia2024');
+console.log('- demo / demo123');
 
