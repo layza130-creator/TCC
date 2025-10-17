@@ -131,8 +131,5 @@ loginBtn.addEventListener('mouseleave', function() {
 });
 
 console.log('Sistema de Login Pizza Cesar carregado!');
-console.log('Credenciais de teste disponíveis:');
-console.log('- admin / admin123');
-console.log('- franqueado / franquia2024');
-console.log('- demo / demo123');
+
 
