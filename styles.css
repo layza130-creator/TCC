@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-:root {{
+:root {
     --color-primary: #E31E24;
     --color-secondary: #FFB81C;
     --color-dark: #1a1a1a;
