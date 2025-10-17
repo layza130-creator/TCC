@@ -49,7 +49,7 @@ body {
 }
 
 .logo img, .logo-img {
-    height: 45px; /* ajuste conforme o tamanho ideal */
+    height: 55px; /* ajuste conforme o tamanho ideal */
     width: auto;
     display: block;
 }
