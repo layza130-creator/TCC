@@ -156,9 +156,9 @@ const campaigns = {
     '2024-07-20': 'Campanha Inverno',
     '2024-08-11': 'Dia dos Pais',
     '2024-09-07': 'Independência',
-    '2024-10-12': 'Dia das Crianças',
-    '2024-11-15': 'Black Friday',
-    '2024-12-25': 'Natal'
+    '2025-10-12': 'Dia das Crianças',
+    '2025-11-15': 'Black Friday',
+    '2025-12-25': 'Natal'
 };
 
 function generateCalendar() {
