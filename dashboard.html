@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Cesar - Portal do Franqueado</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="brand-logo-small">
+                    <div class="logo-circle-small">
+                        <span>PC</span>
+                    </div>
+                    <div>
+                        <h2>Pizza Cesar</h2>
+                        <p>Portal do Franqueado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <span class="user-icon">👤</span>
+                    <div class="user-details">
+                        <span class="user-name" id="userName">Franquia São Paulo</span>
+                        <span class="user-role">Franqueado</span>
+                    </div>
+                </div>
+                <button class="btn-logout" onclick="logout()">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h1>Bem-vindo ao Portal Pizza Cesar</h1>
+                <p>Sua central de comunicação e materiais oficiais da franquia</p>
+            </div>
+            <div class="welcome-stats">
+                <div class="stat-item">
+                    <span class="stat-number">122</span>
+                    <span class="stat-label">Lojas no iFood</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Marcas Ativas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Anos de Mercado</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Grid -->
+        <section class="dashboard-grid">
+            <!-- Templates & Artes -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">🎨</div>
+                    <h3>Templates & Artes</h3>
+                </div>
+                <p>Acesse templates prontos para posts, stories, banners e materiais promocionais da Pizza Cesar.</p>
+                <button class="btn-card" onclick="openDriveFolder('templates')">Acessar Templates</button>
+            </div>
+
+            <!-- Brandbook -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">📖</div>
+                    <h3>Brandbook Oficial</h3>
+                </div>
+                <p>Download do manual da marca atualizado com logos, cores, fontes e diretrizes visuais.</p>
+                <button class="btn-card" onclick="downloadBrandbook()">Download Brandbook</button>
+            </div>
+
+            <!-- Vídeos -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">🎬</div>
+                    <h3>Vídeos Promocionais</h3>
+                </div>
+                <p>Biblioteca de vídeos prontos para campanhas locais e redes sociais.</p>
+                <button class="btn-card" onclick="openDriveFolder('videos')">Ver Vídeos</button>
+            </div>
+
+            <!-- Suporte -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">💬</div>
+                    <h3>Suporte & Dúvidas</h3>
+                </div>
+                <p>Canal direto com a equipe de marketing para esclarecimentos e suporte em campanhas.</p>
+                <button class="btn-card" onclick="openSupport()">Abrir Suporte</button>
+            </div>
+
+            <!-- Kits de Comunicação -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">📊</div>
+                    <h3>Kits de Comunicação</h3>
+                </div>
+                <p>Pacotes completos de materiais para campanhas específicas e datas comemorativas.</p>
+                <button class="btn-card" onclick="openDriveFolder('kits')">Ver Kits</button>
+            </div>
+
+            <!-- Orientações -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">🎯</div>
+                    <h3>Orientações Marketing</h3>
+                </div>
+                <p>Guias e melhores práticas para marketing local e gestão de redes sociais.</p>
+                <button class="btn-card" onclick="openDriveFolder('orientacoes')">Ver Orientações</button>
+            </div>
+        </section>
+
+        <!-- Calendário de Campanhas -->
+        <section class="calendar-section">
+            <div class="calendar-header">
+                <h2>📅 Calendário de Campanhas</h2>
+                <div class="calendar-nav">
+                    <button class="btn-calendar" onclick="previousMonth()">← Anterior</button>
+                    <span class="calendar-month" id="currentMonth">Janeiro 2024</span>
+                    <button class="btn-calendar" onclick="nextMonth()">Próximo →</button>
+                </div>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar will be generated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Ações Rápidas -->
+        <section class="quick-actions">
+            <h3>Ações Rápidas</h3>
+            <div class="quick-actions-grid">
+                <button class="btn-quick" onclick="downloadBrandbook()">
+                    <span>📥</span>
+                    Download Rápido - Brandbook
+                </button>
+                <button class="btn-quick" onclick="openSupport()">
+                    <span>🆘</span>
+                    Suporte Urgente
+                </button>
+                <button class="btn-quick" onclick="openDriveFolder('templates')">
+                    <span>⚡</span>
+                    Templates Mais Usados
+                </button>
+                <button class="btn-quick" onclick="openDriveFolder('kits')">
+                    <span>🎁</span>
+                    Kits Sazonais
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Suporte -->
+    <div id="supportModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('supportModal')">&times;</button>
+            <h2>💬 Suporte ao Franqueado</h2>
+            <form class="support-form" onsubmit="submitSupport(event)">
+                <div class="form-group">
+                    <label for="supportType">Tipo de Suporte:</label>
+                    <select id="supportType" required>
+                        <option value="">Selecione...</option>
+                        <option value="campanha">Dúvida sobre Campanha</option>
+                        <option value="material">Solicitação de Material</option>
+                        <option value="tecnico">Problema Técnico</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="supportSubject">Assunto:</label>
+                    <input type="text" id="supportSubject" placeholder="Descreva brevemente sua dúvida" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="supportMessage">Mensagem:</label>
+                    <textarea id="supportMessage" rows="5" placeholder="Detalhe sua solicitação ou dúvida..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Solicitação</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>
+
