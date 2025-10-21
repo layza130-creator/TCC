@@ -121,7 +121,7 @@ body {
     position: relative;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"%3E%3Crect fill="%238b4513" width="1200" height="800"/%3E%3C/svg%3E');
+                url("../Images/02DCCD72-CC54-4522-AFA9-86204F0606FE.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
